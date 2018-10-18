@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Train Schedule</title>
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <!-- link css -->
+  <link rel="stylesheet" href="style.css">
+  <script src="https://www.gstatic.com/firebasejs/5.5.4/firebase.js"></script>
+</head>
+<body>
+  <!-- link js -->
+  <!-- jumbotron -->
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container header">
+      <h1 class="display-4">Train Schedule</h1>
+      <p class="lead">The leading website for today's locomotion</p>
+    </div>
+  </div>
+  <!-- form -->
+  <div class="container">
+    <form class="formBox">
+      <div class="card-header">
+        Train Schedule
+      </div>
+      <div id="grouping">
+        <div class="form-group">
+          <label for="employeeName">Train Name</label>
+          <input type="text" class="form-control" id="idTrainName" placeholder="Thomas the Tank Engine">
+          <div class="form-group">
+            <label for="employeeRole">Destination</label>
+            <input type="text" class="form-control" id="idDestination" placeholder="London">
+          </div>
+          <div class="form-group">
+            <label for="employeeStartDate">First Train</label>
+            <input type="text" class="form-control" id="idFirstTrain" placeholder="Military Time">
+          </div>
+          <div class="form-group">
+            <label for="employeeRate">Frequency</label>
+            <input type="text" class="form-control" id="idFrequency" placeholder="Every Day">
+          </div>
+          <button type="submit" class="btn btn-secondary" id="idSubmit">Submit</button>
+        </div>
+    </form>
+  </div>
+  <!-- form -->
+  <!-- table -->
+  <div class="container outputBox">
+    <div class="card-header">
+      Current Train
+    </div>
+    <div id="grouping">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Train Name</th>
+            <th scope="col">Destination</th>
+            <th scope="col">First Train</th>
+            <th scope="col">Frequency</th>
+          </tr>
+        </thead>
+        <tbody id="tbodyRenderSpot">
+          <tr>
+            <td>Name</td>
+            <td>CEO</td>
+            <td>01/02/2000</td>
+            <td>test</td>
+          </tr>
+          <tr></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <!-- table end -->
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  
+  <script src="app.js"></script>
+</body>
+</html>
