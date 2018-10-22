@@ -48,4 +48,10 @@ var config = {
 
     var timeConverted = moment(firstTrain, "hh:mm").subtract(1, "years");
     console.log(timeConverted);
-  })
+
+    var currentTime = moment();
+    console.log("CURRENT TIME: " + moment (currentTime).format("hh:MM a"))
+
+
+    $("#train-table > tbody").append(train + destination + frequency + firstTrain);
+  });
